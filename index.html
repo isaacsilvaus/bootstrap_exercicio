@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Praticando o Bootstrap</title>
+</head>
+<body>
+    <header class="menu" id="cabecalho">
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>nerdola</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ÚltimasNotícias">Últimas Notícias</a>
+                        </li>
+                    </ul>
+                    <button id="btn-checar-emails" type="button" class="btn btn-warning">Acessar últimas notícias</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel" style="width: 100%;">
+        <div class="carousel-inner">
+            <div data-bs-interval="4000" class="carousel-item active">
+                <img src="./img/coringa.jpeg" style="width: 100%; max-width: 2000px; height: 500px;" />
+                <div class="carousel-caption">
+                    <h2>Coringa 2</h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="./img/legay.webp" style="width: 100%; max-width: 2000px; height: 500px;" />
+                <div class="carousel-caption">
+                    <h2>Superman Legacy</h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="./img/deadpoolewolverine.webp" style="width: 100%; max-width: 2000px; height: 500px;" />
+                <div class="carousel-caption">
+                    <h2>1 de Outubo nos stremings </h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="./img/capitaoamerica4.jpeg" style="width: 100%; max-width: 2000px; height: 500px;" />
+                <div class="carousel-caption">
+                    <h2>Lançamento</h2>
+                </div>
+            </div>
+            <div data-bs-interval="4000" class="carousel-item">
+                <img src="./img/Transformers-One-Culture-T1_FP_107_rgb.webp" style="width: 100%; max-width: 2000px; height: 500px;" />
+                <div class="carousel-caption">
+                    <h2>Nos cinemas</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+        </div>
+    </div>
+
+    <section class="noticias">
+        <h1>Acompannhe o mundo Nerd</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-3">
+                    <article class="card h-100">
+                        <header class="card-header">
+                            Nos cinemas
+                        </header>
+                        <img src="./img/transformesone.jpeg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Transformes: one</h4>
+                            <p class="card-text">
+                                Venha acompanhar essa aventura incrível desses super robôs, e começo da rivalidade entre Otimus prime VS Megatron!
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>19/09/2024 às 20:05:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <article class="card h-100">
+                        <header class="card-header">
+                            Lançamento em: 14 de Fevereiro de 2025
+                        </header>
+                        <img src="./img/capitaoamerica4.jpeg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Capitão América: Adimirável mundo novo</h4>
+                            <p class="card-text">
+                                Venha ver Sam Wilson como o novo Capitão América em seu mais novo filme solo!
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>19/09/2024 às 20:05:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <article class="card h-100">
+                        <header class="card-header">
+                            Deadpool e Wolverine
+                        </header>
+                        <img src="./img/dvsw.jpeg" />
+                        <div class="card-body">
+                            <h4 class="card-title">O grande sucesso da Marel ganha data para os streamings</h4>
+                            <p class="card-text">
+                                Considerado como um dos maiores sucessos de 2024, 'Deadpool & Wolverine' ganhou oficialmente sua data de estreia no streaming: 1º de outubro.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>19/09/2024 às 20:05:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <article class="card h-100">
+                        <header class="card-header">
+                            Superman Legacy
+                        </header>
+                        <img src="./img/superman-legacy-s.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">1 de Julho de 2025 nos cinemas</h4>
+                            <p class="card-text">
+                                Superman é o próximo filme de super-herói americano do Superman da DC Comics.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>19/09/2024 às 20:05:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <article class="card h-100">
+                        <header class="card-header">
+                            Nos cinemas
+                        </header>
+                        <img src="./img/1892928056-coringa-2.webp" />
+                        <div class="card-body">
+                            <h4 class="card-title">Coringa delírio a dois</h4>
+                            <p class="card-text">
+                                Joker: Folie à Deux é um filme americano de 2024, do gênero suspense musical, dirigido por Todd Phillips a partir de um roteiro que coescreveu com Scott Silver.
+                            </p>
+                            <a href="#" class="btn btn-warning">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>19/09/2024 às 20:05:00</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
